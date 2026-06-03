@@ -1,0 +1,103 @@
+@font-face {
+  font-family: a;
+  src: url("/font/spotify_mix.ttf");
+}
+@font-face {
+  font-family: b;
+  src: url("/font/spotify_mix_ui_bold.otf");
+}
+@font-face {
+  font-family: c;
+  src: url("/font/spotify_mix_ui_title_bold.otf");
+}
+@font-face {
+  font-family: d;
+  src: url("/font/spotify_mix_ui_regular.otf");
+}
+@font-face {
+  font-family: e;
+  src: url("/font/spotify_mix_ui_title_extrabold.otf");
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem;
+}
+nav .right {
+  height: 100%;
+  font-size: 2rem;
+  justify-self: start;
+}
+nav .right i {
+  opacity: 70%;
+}
+nav .middle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-self: center;
+}
+nav .middle #home {
+  font-size: 1.8rem;
+  height: 55px;
+  width: 55px;
+  background-color: #121212;
+  display: grid;
+  place-items: center;
+  border-radius: 5rem;
+}
+nav .middle .search {
+  background-color: #121212;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0 0.5rem;
+}
+nav .middle .search i {
+  font-size: 1.4rem;
+  padding: 10px;
+  opacity: 50%;
+}
+nav .middle .search input {
+  height: 50px;
+  width: 100%;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: a;
+  position: relative;
+  z-index: 1;
+}
+nav .middle .search .divider {
+  width: 2px;
+  height: 30px;
+  background-color: #fff;
+  opacity: 20%;
+}
+nav .left {
+  height: 100%;
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+nav .left i {
+  font-size: 1.4rem;
+  padding: 10px;
+}
+nav .left .login {
+  height: 40px;
+  width: 40px;
+  border-radius: 5rem;
+  background-color: #19a24a;
+  box-shadow: 0 0 0 0.35rem rgba(25, 162, 73, 0.4431372549);
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=Navbar.css.map */

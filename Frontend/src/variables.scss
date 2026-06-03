@@ -1,0 +1,33 @@
+@font-face {
+  font-family: a;
+  src: url("/font/spotify_mix.ttf");
+}
+@font-face {
+  font-family: b;
+  src: url("/font/spotify_mix_ui_bold.otf");
+}
+@font-face {
+  font-family: c;
+  src: url("/font/spotify_mix_ui_title_bold.otf");
+}
+@font-face {
+  font-family: d;
+  src: url("/font/spotify_mix_ui_regular.otf");
+}
+@font-face {
+  font-family: e;
+  src: url("/font/spotify_mix_ui_title_extrabold.otf");
+}
+
+$primary-color: #121212;
+$secondary-color: #19a24a;
+$card-dark: #333333;
+$white: #fff;
+$black: #000;
+
+$f-family-sp-100: a;
+$f-family-sp-bold: b;
+$f-family-sp-bold-title: c;
+$f-family-sp-regular: d;
+$f-family-sp-extrabold:  e;
+
