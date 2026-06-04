@@ -1,15 +1,9 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-
+import "./app.js"
 const App = () => {
   return (
     <>
-   
-      {/* <img
-        src="../public/image.png"
-        alt="Calculus problem showing a mathematical proof"
-        style={{ height: "100%", width: "100%" }}
-      /> */}
       <Navbar />
     </>
   )

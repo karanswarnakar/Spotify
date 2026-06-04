@@ -1,0 +1,79 @@
+@font-face {
+  font-family: a;
+  src: url("/font/spotify_mix.ttf");
+}
+@font-face {
+  font-family: b;
+  src: url("/font/spotify_mix_ui_bold.otf");
+}
+@font-face {
+  font-family: c;
+  src: url("/font/spotify_mix_ui_title_bold.otf");
+}
+@font-face {
+  font-family: d;
+  src: url("/font/spotify_mix_ui_regular.otf");
+}
+@font-face {
+  font-family: e;
+  src: url("/font/spotify_mix_ui_title_extrabold.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: a;
+  font-weight: 400;
+}
+.tooltip .tooltip-text {
+  position: absolute;
+  box-shadow: 0px 6px 14px -5px #000;
+  top: 120%;
+  background: #111;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shortcut-key {
+  display: flex;
+  gap: 0.25rem;
+  position: relative;
+  font-family: a;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.shortcut-key span {
+  border-radius: 4px;
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4392156863);
+  color: rgba(255, 255, 255, 0.4392156863);
+}/*# sourceMappingURL=index.css.map */

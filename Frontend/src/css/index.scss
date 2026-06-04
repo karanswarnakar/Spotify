@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    color: $white;
+}
+
+
+// Custome Tooltip
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $f-family-sp-100;
+    font-weight: 400;
+
+    .tooltip-text {
+        position: absolute;
+        box-shadow: 0px 6px 14px -5px $black;
+
+        top: 120%;
+        background: #111;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 6px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    &:hover .tooltip-text {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+// Shortcut key
+.shortcut-key {
+    display: flex;
+    gap: .25rem;
+    position: relative;
+    font-family: $f-family-sp-100;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+    span {
+        border-radius: 4px;
+        padding: 2px 6px;
+        border: 1px solid #ffffff70;
+        color: #ffffff70;
+    }
+}

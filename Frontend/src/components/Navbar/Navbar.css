@@ -24,15 +24,29 @@ nav {
   align-items: center;
   background-color: #000;
   color: #fff;
-  padding: 0.7rem;
+  padding: 0.8rem 2rem 0.8rem 1.5rem;
 }
 nav .right {
   height: 100%;
   font-size: 2rem;
   justify-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: a;
 }
 nav .right i {
   opacity: 70%;
+  transition: 0.4s;
+}
+nav .right i:hover {
+  scale: 1.25;
+}
+nav .right i:active {
+  opacity: 50%;
+}
+nav .right .tooltip-text {
+  font-size: 1rem;
 }
 nav .middle {
   display: flex;
@@ -48,6 +62,14 @@ nav .middle #home {
   display: grid;
   place-items: center;
   border-radius: 5rem;
+  transition: 0.2s;
+}
+nav .middle #home:hover {
+  background-color: rgba(67, 67, 67, 0.4588235294);
+  scale: 1.02;
+}
+nav .middle #home:active {
+  opacity: 30%;
 }
 nav .middle .search {
   background-color: #121212;
@@ -56,10 +78,24 @@ nav .middle .search {
   align-items: center;
   border-radius: 2rem;
   padding: 0 0.5rem;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+nav .middle .search:hover {
+  background-color: rgba(67, 67, 67, 0.4588235294);
+  border: 1px solid rgba(121, 121, 121, 0.4431372549);
 }
 nav .middle .search i {
   font-size: 1.4rem;
   padding: 10px;
+  opacity: 50%;
+  transition: 0.4s;
+}
+nav .middle .search i:hover {
+  opacity: 80%;
+  scale: 1.15;
+}
+nav .middle .search i:active {
   opacity: 50%;
 }
 nav .middle .search input {
@@ -73,6 +109,17 @@ nav .middle .search input {
   font-family: a;
   position: relative;
   z-index: 1;
+}
+nav .middle .search input:hover + .shortcut-key {
+  opacity: 1;
+  visibility: visible;
+}
+nav .middle .search input:focus + .shortcut-key {
+  opacity: 0;
+  visibility: hidden;
+}
+nav .middle .search .shortcut-key {
+  right: 55px;
 }
 nav .middle .search .divider {
   width: 2px;
@@ -91,13 +138,31 @@ nav .left {
 nav .left i {
   font-size: 1.4rem;
   padding: 10px;
+  opacity: 50%;
+  transition: 0.4s;
+}
+nav .left i:hover {
+  opacity: 80%;
+  scale: 1.15;
+}
+nav .left i:active {
+  opacity: 30%;
 }
 nav .left .login {
   height: 40px;
   width: 40px;
   border-radius: 5rem;
   background-color: #19a24a;
-  box-shadow: 0 0 0 0.35rem rgba(25, 162, 73, 0.4431372549);
+  box-shadow: 0 0 0 0.3rem rgba(25, 162, 73, 0.4431372549);
   border: none;
   outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav .left .login:hover {
+  box-shadow: 0 0 0 0.5rem rgba(25, 162, 73, 0.2274509804);
+  scale: 1.02;
+}
+nav .left .login:active {
+  opacity: 50%;
 }/*# sourceMappingURL=Navbar.css.map */

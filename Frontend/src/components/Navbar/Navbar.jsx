@@ -1,25 +1,39 @@
 import React from 'react'
 import "./Navbar.css"
+import Tooltip from '../Custome/Tooltip'
 const Navbar = () => {
   return (
     <nav>
       <div className="right">
-        <i class="ri-arrow-left-s-line"></i>
-        <i class="ri-arrow-right-s-line"></i>
+        <span> <Tooltip content={<i className="ri-arrow-left-s-line"></i>} overlya="Go Back" /></span>
+        <span>  <Tooltip content={<i className="ri-arrow-right-s-line"></i>} overlya="Go forword" /></span>
+        
+        
       </div>
       <div className="middle">
-        <i class="ri-home-2-fill" id='home'></i>
+        <Tooltip content={<i className="ri-home-2-fill" id="home"></i>} overlya="Home" />
         <div className="search">
-          <i class="ri-search-line"></i>
+          <Tooltip content={<i className="ri-search-line"></i>} overlya="Search" />
+          
           <input type="taxt" name="search" id="search" placeholder='What do you want to play?' />
-          <span class="divider"></span>
-          <i class="ri-archive-stack-line"></i>
+
+          <div className="shortcut-key">
+            <span>Ctrl</span>
+            <span>L</span>
+          </div>
+
+          <span className="divider"></span>
+          
+          <Tooltip content={<i className="ri-archive-stack-line"></i>} overlya="Browse" />
         </div>
       </div>
       <div className="left">
-        <i class="ri-notification-2-line"></i>
-        <i class="ri-team-line"></i>
-        <button className="login">K</button>
+        
+        <Tooltip content={<i className="ri-notification-2-line"></i>} overlya="Whatt's New" />
+        
+        <Tooltip content={<i className="ri-team-line"></i>} overlya="Listening activity" />
+        
+        <Tooltip content={<button className="login">K</button>} overlya="Account" />
       </div>
     </nav>
   )
