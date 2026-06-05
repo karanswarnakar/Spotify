@@ -148,7 +148,12 @@ nav .left i:hover {
 nav .left i:active {
   opacity: 30%;
 }
-nav .left .login {
+nav .left .account-contaner {
+  list-style-type: none;
+  position: relative;
+  font-family: a;
+}
+nav .left .account-contaner .login {
   height: 40px;
   width: 40px;
   border-radius: 5rem;
@@ -159,10 +164,39 @@ nav .left .login {
   cursor: pointer;
   transition: 0.4s;
 }
-nav .left .login:hover {
+nav .left .account-contaner .login:hover {
   box-shadow: 0 0 0 0.5rem rgba(25, 162, 73, 0.2274509804);
   scale: 1.02;
 }
-nav .left .login:active {
+nav .left .account-contaner .login:active {
   opacity: 50%;
+}
+nav .left .account-contaner .list-item {
+  width: 300px;
+  background-color: #121212;
+  list-style-type: none;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+nav .left .account-contaner .list-item li {
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  cursor: pointer;
+}
+nav .left .account-contaner .list-item li:hover {
+  background-color: rgba(206, 206, 206, 0.2274509804);
 }/*# sourceMappingURL=Navbar.css.map */
