@@ -1,0 +1,29 @@
+@font-face {
+  font-family: a;
+  src: url("/font/spotify_mix.ttf");
+}
+@font-face {
+  font-family: b;
+  src: url("/font/spotify_mix_ui_bold.otf");
+}
+@font-face {
+  font-family: c;
+  src: url("/font/spotify_mix_ui_title_bold.otf");
+}
+@font-face {
+  font-family: d;
+  src: url("/font/spotify_mix_ui_regular.otf");
+}
+@font-face {
+  font-family: e;
+  src: url("/font/spotify_mix_ui_title_extrabold.otf");
+}
+.playbackbar {
+  width: 100%;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}/*# sourceMappingURL=PlaybackBar.css.map */
